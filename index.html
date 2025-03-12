@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div style="padding-bottom:24px;" class="background-video">
+        <video autoplay loop muted class="video-1">
+            <source src="robot-video.mp4">
+        </video>
+        <img class="robo-img-video" src="c:\Users\aksha\Desktop\robo-video frame.jpg" alt="">
+        <div class="overlay"></div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span
+                        style="font-size:32px;font-weight:bolder;color:#007bff;">ROBOT</span></a>
+                <button style="border:1px solid white;" class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId">
+                    <span><i style="color:white;font-size:20px;" class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="#">Features</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-text" href="#">How It Works</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-text" href="#">Applications</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-text" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-text" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn-1 btn-outline-success my-2 my-sm-0" type="submit">
+                        <i class="fa-solid fa-circle-play"></i> Watch Video
+                    </button>
+                    <button class="btn-2 btn-outline-success my-2 my-sm-0" type="submit">
+                        Get Started
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <style>
+            body {
+                background: white;
+
+            }
+
+            h2,
+            h1 {
+                font-family: "IBM Plex Sans", serif;
+            }
+
+            .nav-text {
+                font-weight: bold;
+                color: #f8f8ff;
+            }
+
+            .btn-1 {
+                border: none;
+                background-color: transparent;
+                padding: 4px 12px;
+                font-weight: 500;
+                border-radius: 6px;
+                color: white;
+            }
+
+            .btn-3 {
+                border: none;
+                background-color: transparent;
+                padding: 4px 12px;
+                font-weight: 500;
+                border: 1px solid white;
+                border-radius: 6px;
+                color: white;
+            }
+
+            .btn-2 {
+                border: 1px solid #007bff;
+                background-color: #007bff;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 6px;
+                margin-left: 12px;
+                font-weight: 500;
+                color: white;
+            }
+
+            i {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 56px;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+
+            .background-video {
+                position: relative;
+                width: 100%;
+                min-height:100vh;
+                overflow: hidden;
+            }
+
+            .video-1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: auto;
+                background-size: cover;
+            }
+            .robo-img-video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height:100%;
+                background-size: cover;   
+                display: none;
+                object-fit: cover;
+            }
+
+            .head-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .overlay {
+                position: absolute;
+                background: rgba(0, 0, 0, 0.6);
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            .overlay-2 {
+                position: absolute;
+                background: rgba(0, 0, 0, 0.6);
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            .about-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-block: 40px;
+            }
+
+            .icons {
+                font-size: 32px;
+                background: #007bff;
+                padding: 16px;
+                border-radius: 50%;
+                color: white;
+            }
+
+            .about-wrapper-text {
+                border-radius: 1px solid black;
+            }
+
+            .key-wrap {
+                border-bottom: 1px solid #cdb7b7;
+                padding: 12px;
+            }
+
+            .key-container {
+                display: flex;
+                justify-content: end;
+            }
+
+            .upper-icons {
+                background-color: #007bff;
+                padding: 20px;
+                border-radius: 50%;
+                font-size: 28px;
+                color: white;
+            }
+
+            .cards {
+
+                clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+                background: rgba(255, 255, 255, 0.25);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(4px);
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                color: white;
+
+            }
+
+            .cards-down {
+
+
+                background: #ffffff;
+                box-shadow: 5px 5px 79px #e0e0e0,
+                    -5px -5px 79px #ffffff;
+                border-top-left-radius: 40px;
+                border-bottom-right-radius: 40px;
+
+            }
+
+            .back-img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .process-card {
+                clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+                background: rgba(255, 255, 255, 0.25);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(4px);
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                color: white;
+            }
+
+            .review-cards {
+                background-color: white;
+                padding: 12px;
+                border-radius: 12px;
+                background: #ffffff;
+                box-shadow: 5px 5px 79px #e0e0e0,
+                    -5px -5px 79px #ffffff;
+            }
+
+            .hr-line {
+                border-bottom: 1px solid #3a3737;
+            }
+
+            .footer {
+                background-color: black;
+            }
+
+            .section-3 {
+                padding-block: 24px;
+                padding-bottom: 44px;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .video-2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: auto;
+                background-size: cover;
+            }
+            .section-5 {
+                padding-block: 24px;
+                padding-bottom: 50px;
+                margin-top: 60px;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .video-3 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                background-size: cover;
+                height: auto;
+            }
+            .section-5,.section-3{
+                background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2350847E'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+background-size: cover;
+background-position:top;
+            }
+        </style>
+
+        <div class="container">
+            <div class="head-container">
+                <div class="head-wrapper">
+                    <h1 style="position:relative;margin-top:48px;color:white;">The Future <br>of <span
+                            style="color:#007bff;">Human-Machine</span> <br> Collaboration</h1>
+                    <p class="head-p"
+                        style="font-size:18px;max-width:60ch;margin-top:32px;margin-bottom:0;position:relative;color:white;">
+                        Experience the next generation of cognitive robotics-where
+                        AI-powered intelligence meets seamless human interaction.
+                        It is designed to think, learn, and evolve, revolutionizing
+                        the way we work and live.
+                    </p>
+                    <div style="margin-top:28px;position: relative;" class="buttons">
+                        <button class="btn-3">Explore</button>
+                        <button class="btn-2">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="r-wrapper container d-flex align-items-center justify-content-center gap-3 my-4">
+        <div>
+            <img class="r-img" width="200px" src="about-robo.png" alt="">
+        </div>
+        <div>
+            <h2 class="r-head" style="font-size:px;display:flex;align-items:center;font-weight:bold;"><span
+                    style="color:#007bff;margin-right:4px;"> AI</span> & <span
+                    style="color:#007bff;margin-left:4px;">Robots</span></h2>
+            <p style="max-width:84ch;">AI and robotics are transforming the future by enabling machines to think, learn,
+                and
+                intreact like humans. Combining artificial intelligence with advanced robotics allows for
+                automation, precision, and adaptability in various industries. From smart assistants to 
+                humanoid robots, these innovations enhance eficiency, safety, and human capabilities.</p>
+    </div>
+    </div>
+    <div class="section-3">
+        <video autoplay loop muted class="video-2">
+            <source src="https://cdn.pixabay.com/video/2024/02/07/199740-911047178_large.mp4">
+        </video>
+        <div class="overlay-2"></div>
+        <div class="container">
+            <div class="row flex">
+                <div style="position:relative;color:white;">
+                    <span
+                        style=" color:#007bff;font-size:20px;display:flex;justify-content:center;font-weight:bold;margin-bottom:0;">Key
+                        Features</span>
+                    <h2 style="text-align:center;margin-top:12px;font-weight:bold;margin-bottom:20px;">Innovative
+                        capabilities Driving <br> the Future</h2>
+                </div>
+                <div class="container">
+                    <div class="row g-2">
+                        <div class="col-12 col-md-4">
+                            <div class="cards p-3 h-100">
+                                <div>
+                                    <i class="fa-brands fa-airbnb upper-icons ms-2 mt-2"></i>
+                                </div>
+                                <h2 style="font-size:20px;margin-top:16px;margin-bottom:12px;">AI-Powered Decision
+                                    Making
+                                </h2>
+                                <p>Artificial Intelligence empowers robots to make
+                                    by processing data, learning from experiences, and
+                                    adapting to new situations. Ihis capability enhaces their
+                                    efficiency and flexibility across various application.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="cards p-3 h-100">
+                                <div>
+                                    <i class="fa-brands fa-airbnb upper-icons ms-2 mt-2"></i>
+                                </div>
+                                <h2 style="font-size:20px;margin-top:16px;margin-bottom:12px;">Real-Time Learning &
+                                    Adaption
+                                </h2>
+                                <p>Artificial Intelligence empowers robots to make
+                                    by processing data, learning from experiences, and
+                                    adapting to new situations. Ihis capability enhaces their
+                                    efficiency and flexibility across various application.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="cards p-3 h-100">
+                                <div>
+                                    <i class="fa-brands fa-airbnb upper-icons ms-2 mt-2"></i>
+                                </div>
+                                <h2 style="font-size:20px;margin-top:16px;margin-bottom:12px;">Seamless Human
+                                    Interaction
+                                </h2>
+                                <p>Artificial Intelligence empowers robots to make
+                                    by processing data, learning from experiences, and
+                                    adapting to new situations. Ihis capability enhaces their
+                                    efficiency and flexibility across various application.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-4">
+        <div class="my-5">
+            <span style="color:#007bff;display: flex;justify-content:center;font-size:20px;font-weight:bold;">Why
+                Choose Us</span>
+            <h2 style="text-align:center;margin-top:12px;font-weight:bold;margin-bottom:px;">Meet the Future of
+                Intelligent <br> Robotics</h2>
+        </div>
+
+        <div style="position:relative;" class="background-img">
+            <div class="container">
+                <div class="choo-1 row d-flex justify-content-between">
+                    <div class="col-12 col-md-5">
+                        <div class="cards-down p-3">
+                            <h4 style="font-weight:bold;"><span style="color:#007bff;">Cognitive Intelligence
+                                    at Its Core </span></h4>
+                            <p style="max-width:59ch;">Our robots is built with advanced AI that enables real-time
+                                learning, decision-making, and seamless interaction, making
+                                it an intuitive partner for humans. </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="cards-down p-3">
+                            <h4 style="font-weight:bold;"><span style="color:#007bff;">Adaptive & Human-Centric
+                                    Design</span></h4>
+                            <p style="max-width:59ch;">Designed to understnd human gestures, speech, and emotions,
+                                our robot-video
+                                integrates naturally into any environment, ensuring effortless collaboration. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-sm-2 mt-md-5">
+                    <div class="choo-1 row d-flex justify-content-between">
+                        <div class="col-12 col-md-5">
+                            <div class="cards-down p-3">
+                                <h4 style="font-weight:bold;"><span style="color:#007bff;">Autonomous Yet
+                                        Reliable</span></h4>
+                                <p style="max-width:59ch;">With real-time data processing and intelligent
+                                    automation, it can operate
+                                    independently while prioritizing saftey and efficiency.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="cards-down p-3">
+                                <h4 style="font-weight:bold;"><span style="color:#007bff;">Versatile Across
+                                        Industries </span></h4>
+                                <p style="max-width:59ch;">From healthcare and customer service to manufacturing and
+                                    personal assistance, our robot enhance productiviy in multiple
+                                    sectors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-sm-0 mt-md-5">
+                        <div class="choo-1 row d-flex justify-content-between -5">
+                            <div class="col-12 col-md-5">
+                                <div class="cards-down p-3">
+                                    <h4 style="font-weight:bold;"><span style="color:#007bff;">Advanced
+                                            Motion for Real-World </span></h4>
+                                    <p style="max-width:59ch;">With human-like agility and precision, it can handle
+                                        complex
+                                        tasks, from delicate object manupulation to heavy- duty
+                                        operations. </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="cards-down p-3">
+                                    <h4 style="font-weight:bold;"><span style="color:#007bff;">Energy-Efficient &
+                                            Great Works</span></h4>
+                                    <p style="max-width:59ch;">Bulit with eco-friendly materials and optimized
+                                        energy
+                                        consumption, it's designed for long lasting, sustainable
+                                        operation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back-img">
+                            <img style="height:650px;width:auto;" src="robota.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="section-5">
+        <video autoplay loop muted class="video-3">
+            <source src="https://cdn.pixabay.com/video/2023/07/24/173102-848555581_large.mp4">
+        </video>
+        <div class="overlay-2"></div>
+        <div class="container">
+            <div style="position:relative;color:white;" class="my-4">
+                <span style="color:#007bff;font-size:20px;font-weight:bold;display:flex;justify-content:center;">How
+                    It's Works</span>
+                <h2 style="text-align:center;margin-top:12px;font-weight:bold;">A Smart Process in
+                    Action</h2>
+            </div>
+            <div class="row gx-0 g-3">
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="process-card p-3 h-100">
+                        <div style="display: flex;justify-content:center;">
+                            <i class="fa-brands fa-airbnb upper-icons ms-2 mt-2"></i>
+                        </div>
+                        <h4 style="text-align: center;">Start</h4>
+                        <p style="text-align:center;">The robot activates its sensors and AI vision to scam
+                            the environment, identifying objects, people.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="process-card p-3 h-100">
+                        <div style="display: flex;justify-content:center;">
+                            <i class="fa-brands fa-airbnb upper-icons ms-2 mt-2"></i>
+                        </div>
+                        <h5 style="text-align: center;">Understand</h5>
+                        <p style="text-align:center;">AI algorithms analyze real-time data,
+                            interpret commands, and determine the best courese
+                            of action.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="process-card p-3 h-100 ">
+                        <div style="display: flex;justify-content:center;">
+                            <i class="fa-brands fa-airbnb upper-icons ms-2 mt-2"></i>
+                        </div>
+                        <h4 style="text-align: center;">Respond</h4>
+                        <p style="text-align:center;">The Robot communicates using voice, gestures, or
+                            displays, ensuring smooth collaboration with users.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="process-card p-3 h-100">
+                        <div style="display: flex;justify-content:center;">
+                            <i class="fa-brands fa-airbnb upper-icons ms-2 mt-2"></i>
+                        </div>
+                        <h4 style="text-align: center;">Act</h4>
+                        <p style="text-align:center;">It performs precise actions, wheather assisting in
+                            tasks, carrying objects, or providing real-time insights.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-6">
+        <div class="container">
+            <div class="testi-1 row my-5 g-0 gx-3">
+                <div class="col-12 col-md-4">
+                    <div class="mt- mb-3">
+                        <span style=" color:#007bff;font-size:20px;font-weight:bold;margin-bottom:0;">Testimonals</span>
+                        <h2 style="margin-top:12px;font-weight:bold;">Trusted by Innovators: <br> See What They Say</h2>
+                    </div>
+                    <div class="testi-img" style="margin-top:0;">
+                        <img style="width:100%;border-radius:12px;"
+                            src="https://img.freepik.com/premium-photo/robot-is-standing-front-computer-screen-that-says-robot_861143-312.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="review-cards h-100">
+                        <div id="stars">
+                            <i style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i> <i
+                                style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i> <i
+                                style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i><i
+                                style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i><i
+                                style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 style="margin-top:12px;font-weight:bold;">Leading the Future of Robotics</h5>
+                        <p>As pioneers in cognitive robotics, we are shaping a future where machines
+                            work alongside humans effortlessly. Our AI-driven, learn, and adapt, making
+                            interactions more intuitive and efficient.
+                        </p>
+                        <div class="d-flex gap-2">
+                            <img style="width:45px;height:45px;border-radius:50%;"
+                                src="https://static.vecteezy.com/system/resources/previews/006/859/348/non_2x/young-boy-indian-student-portrait-photo.jpg"
+                                alt="">
+                            <div>
+                                <Span style="font-size:16px;font-weight:bold;">Bhanvesh Singh</Span>
+                                <p style="font-size:14px;">Robot Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="review-cards h-100">
+                        <div id="stars">
+                            <i style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i> <i
+                                style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i> <i
+                                style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i><i
+                                style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i><i
+                                style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 style="margin-top:12px;font-weight:bold;">Redefining Automation with Ai</h5>
+                        <p>We believe in a world where robotics goes beyond automation- it becomes an
+                            extension of human intelligence. Our cutting-edge AI enables robots to undertand
+                            their environment.
+                        </p>
+                        <div class="d-flex gap-2">
+                            <img style="width:45px;height:45px;border-radius:50%;"
+                                src="https://t4.ftcdn.net/jpg/01/84/54/21/360_F_184542148_ZRs7YiAIvlmF0HtSuct201pVsi5sq6jF.jpg"
+                                alt="">
+                            <div>
+                                <Span style="font-size:16px;font-weight:bold;">Karan Singh Rautela</Span>
+                                <p style="font-size:14px;">Robot Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="hr-line">
+                <div class="row footer.text pt-4">
+                    <div class="col-6 col-md-3">
+                        <span style="font-size:40px;font-weight:bolder;color:#007bff;">ROBOT</span>
+                    </div>
+                    <div style="color:white;" class="col-6 col-md-3">
+                        <p class="span"><i class="fa-solid fa-phone"></i> +91-8387780986</p>
+                        <p class="span"><i class="fa-solid fa-envelope none"></i> robot121@gmail.com</p>
+                    </div>
+                    <div style="color:white;" class="col-6 col-md-3">
+                        <p style="font-weight:bold;">Quick Links</p>
+                        <p style="font-size:14px;">Home</p>
+                        <p style="font-size:14px;">About Us</p>
+                        <p style="font-size:14px;">Blog/News</p>
+                        <p style="font-size:14px;">Contact Us</p>
+                    </div>
+                    <div style="color:white;" class="col-6 col-md-3">
+                        <p style="font-weight:bold;">Product Services</p>
+                        <p style="font-size:14px;">Cognitive Robotics</p>
+                        <p style="font-size:14px;">AI-Powered Automation</p>
+                        <p style="font-size:14px;">Human-Robot Interaction</p>
+                        <p style="font-size:14px;">Industry Solutions</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="font-size:14px;text-align:center;margin-bottom:0;padding-block:20px;color:#808080;">@ 2025
+                C-robot.
+                All rights reserved. Privacy Policy | Terms of Service</p>
+        </div>
+    </div>
+    <style>
+     @media(max-width:767px)
+     {
+        .choo-1{
+            gap:20px;
+            margin-top:20px;
+        }
+        .back-img{
+            display:none;
+        }
+        .testi-1{
+            gap:20px;
+        }
+        .testi-img{
+            padding-top:20px;
+        }
+        .r-img{
+            width:100px;
+        }
+     }
+     @media(max-width:425px){
+        .r-wrapper{
+            display:flex;
+            flex-direction:column;
+        }
+        h1{
+            font-size:48px;
+        }
+        .head-p{
+            font-size:16px !important;
+        }
+        .process-card{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        .r-head{
+            display:flex;
+            justify-content:center;
+            margin-top:20px;
+        }
+     }
+     @media(max-width:520px){
+            .process-card{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+     @media(max-width:992px){
+        .video-1,.video-2,.video-3{
+            display:none;
+        }
+        .robo-img-video{
+            display: block;
+        }
+        .overlay-2{
+            background-color: rgba(0, 0, 0, );
+        }
+        .overlay{
+            background-color: rgba(0, 0, 0,0.7);
+        }
+
+     }
+     @media(max-width:768px){
+        .flex{
+            display: flex;
+            flex-direction:column;
+        }
+     }
+     @media(max-width:321px){
+        .span{
+          display: none;
+        }
+        }
+     
+    </style>
+
+</body>
+
+</html>
