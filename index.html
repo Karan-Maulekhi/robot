@@ -123,7 +123,8 @@
             .background-video {
                 position: relative;
                 width: 100%;
-                max-height:660px;
+                /* max-height:660px; */
+                height: 600px;
                 overflow: hidden;
             }
 
@@ -160,6 +161,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
+                overflow: hidden;
             }
 
             .overlay-2 {
@@ -234,7 +236,7 @@
 
             .back-img {
                 position: absolute;
-                top: 50%;
+                top: 55%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
@@ -331,7 +333,7 @@ background-position:top;
         </div>
     </div>
 
-    <div class="r-wrapper container d-flex align-items-center justify-content-center gap-3 my-4">
+    <div style="padding-block: 56px;" class="r-wrapper container d-flex align-items-center justify-content-center gap-3">
         <div>
             <img class="r-img" width="200px" src="about-robo.png" alt="">
         </div>
@@ -412,8 +414,8 @@ background-position:top;
             </div>
         </div>
     </div>
-    <div class="section-4">
-        <div class="my-5">
+    <div style="padding-block:56px;" class="section-4">
+        <div>
             <span style="color:#007bff;display: flex;justify-content:center;font-size:20px;font-weight:bold;">Why
                 Choose Us</span>
             <h2 style="text-align:center;margin-top:12px;font-weight:bold;margin-bottom:px;">Meet the Future of
@@ -564,9 +566,9 @@ background-position:top;
             </div>
         </div>
     </div>
-    <div class="section-6">
+    <div style="padding-block:56px;" class="section-6">
         <div class="container">
-            <div class="testi-1 row my-5 g-0 gx-3">
+            <div class="testi-1 row g-0 gx-3 align-items-center" >
                 <div class="col-12 col-md-4">
                     <div class="mt- mb-3">
                         <span style=" color:#007bff;font-size:20px;font-weight:bold;margin-bottom:0;">Testimonals</span>
@@ -578,8 +580,8 @@ background-position:top;
                             alt="">
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="review-cards h-100">
+                <div class="col-12 col-md-4 ">
+                    <div class="review-cards h-75">
                         <div id="stars">
                             <i style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i> <i
                                 style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i> <i
@@ -604,7 +606,7 @@ background-position:top;
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="review-cards h-100">
+                    <div class="review-cards h-75">
                         <div id="stars">
                             <i style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i> <i
                                 style="color:yellow;font-size:20px;" class="fa-solid fa-star"></i> <i
@@ -712,9 +714,6 @@ background-position:top;
             .process-card{
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             }
-            .background-video {
-                height: 800px;
-            }
         }
      @media(max-width:992px){
         .video-1,.video-2,.video-3{
@@ -744,6 +743,21 @@ background-position:top;
         .span{
           display: none;
         }
+        }
+        @media(max-width:1068px){
+            .background-video{
+                height: 550px;
+            }
+        }
+        @media(max-width:770px){
+            .background-video{
+                height:600px;
+            }
+        }
+        @media(max-width:525px){
+            .background-video{
+                height:700px;
+            }
         }
      
     </style>
